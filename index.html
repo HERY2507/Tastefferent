@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tastefferent</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="scripts.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="title-container">
-        <img src="images/tomato.svg" alt="icon of tomato" class="tomato">
+      <div class="title-container">
+        <img src="images/tomato.png" alt="icon of tomato" class="tomato" />
         <h1>Tastefferent</h1>
-        </div>
-        <div class="hamburger" onclick="toggleNav()">
-            <hr>
-            <hr>
-            <hr>
-        </div>
-      
-        <nav class="toggle-nav">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Photos</a>
-            <a href="">Delivery</a>
-            <a href="">Location</a>
-            <a href="">Contact</a>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        <hr />
+        <hr />
+        <hr />
+      </div>
 
-        </nav>
-
- 
-
+      <nav class="toggle-nav">
+        <a class="a_home" href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="photos.html">Photos</a>
+        <a href="delivery.html">Delivery</a>
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
 
     <main>
+      <img
+        class="front_cover"
+        src="images/front_cover.jpg"
+        alt="grocries front cover"
+      />
+      <div class="get_started">
+        <p>Fresh produce to your door</p>
+        <a href="delivery.html">Get Started</a>
+      </div>
 
+      <div class="dont">
+        <p>Don't miss the new Taste</p>
+        <div>
+          <input class="input_sign_up" type="text" />
+          <input class="sign_up" type="submit" value="Sign Up" />
+        </div>
+      </div>
+
+      <div class="texts">
+        <p>
+          Tastefferent helps farmers to bring you the fresh produce you need.
+        </p>
+      </div>
+
+      <div class="icons_div">
+        <div class="icons_word">
+          <div><p>Deliver</p></div>
+          <div><p>Fast</p></div>
+          <div><p>Timeless</p></div>
+          <div><p>Save</p></div>
+        </div>
+        <div class="icons">
+          <div>
+            <img src="images/take-away.png" alt="take-away" />
+          </div>
+          <div><img src="images/truck.png" alt="truck" /></div>
+          <div><img src="images/clock.png" alt="clock" /></div>
+          <div><img src="images/hands.png" alt="hand" /></div>
+        </div>
+      </div>
+      <div class="get_started2">
+        <p>Help Yourself and Farmers</p>
+        <a href="delivery.html">Get Started</a>
+      </div>
     </main>
 
     <footer>
-
+      <p>&copy;Copyright 2022 Tastefferent. All Rights Reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

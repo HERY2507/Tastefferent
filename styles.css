@@ -1,68 +1,505 @@
-
-@media (min-width: 500px){
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        width: 100%;
-        background-color: cornflowerblue;
-        
-    }
-
-    .tomato {
-        width: 80px;
-    }
-
-    .hamburger {
-        width: 50px;
-        padding: 2rem;
-    }
-
-    .hamburger hr {
-        border: 2px solid black;
-    }
-
-    .title-container {
-        display: flex;
-        align-items: center;
-        width: 260px;
-        justify-content: space-between;
-    }
-
-    header nav {
-        background-color: #D5E8D4;
-        position: fixed;
-        width: 100%;
-        top: 108px;
-    }
-
-    header nav a {
-        display: block;
-        color: #FF9999;
-        text-align: center;
-        text-decoration: none;
-        padding: 3rem;
-        border: 1px solid #FF9999;
-        font: bold;
-    }
-
-    header nav {
-        left: 100%;
-    }
-
-    header nav.show {
-        left: 0;
-        
-    }
-
-
-   
-
-   
+body {
+  margin: 0;
+  background-color: white;
 }
 
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: white;
+  }
 
+  .tomato {
+    width: 80px;
+  }
 
+  .hamburger {
+    width: 50px;
+    padding: 2rem;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .hamburger hr {
+    border: 2px solid black;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    justify-content: space-between;
+  }
+
+  header nav {
+    background-color: #d5e8d4;
+    position: fixed;
+    width: 100%;
+    top: 82px;
+  }
+
+  header nav a {
+    display: block;
+    color: #ff9999;
+    text-align: center;
+    text-decoration: none;
+    padding: 3rem;
+    border: 1px solid #ff9999;
+    font: bold;
+  }
+  header nav a:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+  }
+
+  header nav {
+    left: 100%;
+  }
+
+  header nav.show {
+    left: 0;
+  }
+
+  main {
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+  }
+
+  .front_cover {
+    width: 450px;
+    margin-top: 82px;
+    position: relative;
+  }
+
+  .get_started {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: #0b132b85;
+    color: white;
+    height: 120px;
+    width: 250px;
+    border-radius: 5px;
+  }
+
+  .get_started a {
+    color: white;
+    text-decoration: none;
+    background-color: #fc4a4a;
+    padding: 6px;
+    box-shadow: 1px 1px black;
+  }
+
+  .get_started a:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+
+  .dont {
+    background-color: #d5e8d4;
+  }
+
+  .dont p {
+    padding: 5px;
+  }
+
+  .dont input {
+    margin-bottom: 10px;
+  }
+
+  .sign_up:hover {
+    background-color: rgb(177, 175, 175);
+    border-color: rgb(177, 175, 175);
+    cursor: pointer;
+  }
+  .icons_div {
+    display: flex;
+    flex-direction: column;
+    background-color: #ff9999;
+    box-shadow: 1px 1px black;
+  }
+
+  .icons_div div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .icons_div div img {
+    width: 50px;
+  }
+
+  .icons_div .icons_word div {
+    width: 50px;
+  }
+
+  .icons {
+    margin-bottom: 10px;
+  }
+
+  .texts {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .get_started2 a {
+    color: white;
+    text-decoration: none;
+    background-color: #fc4a4a;
+    padding: 6px;
+    box-shadow: 1px 1px black;
+  }
+
+  .get_started2 a:hover {
+    background-color: red;
+    cursor: pointer;
+  }
+
+  .get_started2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .about {
+    margin-top: 82px;
+    padding: 10px;
+  }
+
+  .gallery {
+    margin-top: 82px;
+    padding: 10px;
+  }
+
+  .first_photos {
+    display: flex;
+  }
+
+  .first_photos img {
+    width: 150px;
+  }
+  .second_photos {
+    display: flex;
+  }
+
+  .second_photos img {
+    width: 225px;
+  }
+
+  .location {
+    margin-top: 82px;
+    padding: 10px;
+  }
+
+  .googlemap {
+    height: 500px;
+    width: 450px;
+  }
+
+  .googlemap2 {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 450px;
+  }
+
+  .googlemap3 {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 450px;
+  }
+
+  .location_avail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location_avail img {
+    width: 50px;
+    padding: 5px;
+  }
+
+  .contact {
+    margin-top: 82px;
+    padding: 10px;
+  }
+
+  .contact_background img {
+    width: 450px;
+  }
+
+  .contact_paragraph {
+    background-color: lightgray;
+    padding: 0.5rem;
+    margin-top: 10px;
+  }
+
+  textarea {
+    resize: none;
+    width: 450px;
+    height: 100px;
+  }
+
+  .contact_info {
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .labels {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-evenly;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .textarea-div {
+    text-align: left;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .contact-submit {
+    margin-bottom: 15px;
+    background-color: #d5e8d4;
+    border: none;
+    box-shadow: 2px 2px black;
+  }
+
+  .contact-submit:hover {
+    background-color: lightgray;
+    cursor: pointer;
+    border-color: lightblue;
+  }
+
+  .contact_paragraph {
+    box-shadow: 1px 1px black;
+  }
+
+  .dont {
+    margin-bottom: 15px;
+    box-shadow: 1px 1px black;
+  }
+
+  .delivery {
+    margin-top: 82px;
+    padding: 10px;
+  }
+
+  .delivery_submit {
+    margin-top: 20px;
+  }
+
+  .shopping_cart:hover {
+    cursor: pointer;
+  }
+
+  .a_home {
+    background-color: rgb(151, 250, 192);
+  }
+
+  .a_about {
+    background-color: rgb(151, 250, 192);
+  }
+
+  .a_photos {
+    background-color: rgb(151, 250, 192);
+  }
+
+  .a_delivery {
+    background-color: rgb(151, 250, 192);
+  }
+
+  .a_location {
+    background-color: rgb(151, 250, 192);
+  }
+
+  .a_contact {
+    background-color: rgb(151, 250, 192);
+  }
+}
+
+@media (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+
+  header nav {
+    position: static;
+    background-color: unset;
+    width: unset;
+  }
+
+  main {
+    text-align: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+  }
+
+  .about {
+    margin-top: 80px;
+    padding: 10px;
+  }
+
+  .get_started {
+    top: 20%;
+    left: 35%;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .front_cover {
+    width: 900px;
+  }
+
+  .get_started p {
+    font-size: larger;
+  }
+
+  .get_started a {
+    font-size: larger;
+    width: 100px;
+    box-shadow: 2px 2px black;
+  }
+
+  .get_started2 a {
+    font-size: larger;
+    width: 100px;
+    box-shadow: 2px 2px black;
+  }
+
+  .get_started2 p {
+    font-size: larger;
+  }
+
+  .texts p {
+    font-size: larger;
+  }
+
+  .dont {
+    font-size: larger;
+  }
+
+  .toggle-nav a {
+    font-size: 25px;
+    padding: 10px;
+  }
+
+  .toggle-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-nav a {
+    border: none;
+  }
+
+  .about_main {
+    font-size: larger;
+  }
+
+  .photos_main {
+    font-size: larger;
+  }
+
+  .delivery_main {
+    font-size: larger;
+  }
+
+  .location_main {
+    font-size: larger;
+  }
+
+  .contact_main {
+    font-size: larger;
+  }
+
+  .contact_info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .textarea-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .googlemap {
+    height: 800px;
+    width: 900px;
+  }
+
+  .googlemap2 {
+    position: relative;
+    text-align: right;
+    height: 800px;
+    width: 900px;
+    box-shadow: 2px 2px gray;
+  }
+
+  .googlemap3 {
+    overflow: hidden;
+    background: none;
+    height: 800px;
+    width: 900px;
+  }
+
+  .photos {
+    display: grid;
+    justify-content: center;
+  }
+
+  .about_img {
+    width: 500px;
+  }
+
+  .about_main div p {
+    width: 600px;
+    margin-left: 16%;
+    margin-right: 40%;
+  }
+
+  .contact_paragraph p {
+    width: 600px;
+    margin-left: 16%;
+    margin-right: 40%;
+  }
+
+  .contact_background img {
+    width: 900px;
+    margin-bottom: 20px;
+    box-shadow: 3px 3px gray;
+  }
+}

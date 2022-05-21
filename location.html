@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastefferent</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <img src="images/tomato.png" alt="icon of tomato" class="tomato" />
+        <h1>Tastefferent</h1>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        <hr />
+        <hr />
+        <hr />
+      </div>
+
+      <nav class="toggle-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="photos.html">Photos</a>
+        <a href="delivery.html">Delivery</a>
+        <a class="a_location" href="location.html">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="location_main">
+      <div class="location">
+        <h1>Location</h1>
+      </div>
+
+      <div class="googlemap2">
+        <div class="googlemap3">
+          <iframe
+            class="googlemap"
+            src="https://maps.google.com/maps?q=eau%20claire&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><br />
+        </div>
+      </div>
+
+      <div>
+        <h4>Location Available: Eau Claire</h4>
+      </div>
+      <div class="location_avail">
+        <p>More will be available</p>
+        <img src="images/calendar.png" alt="calender" />
+      </div>
+      <div class="dont">
+        <p>Get future location availability sign up now</p>
+
+        <div>
+          <input class="input_sign_up" type="text" />
+          <input class="sign_up" type="submit" value="Sign Up" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;Copyright 2022 Tastefferent. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

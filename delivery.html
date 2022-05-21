@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastefferent</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <img src="images/tomato.png" alt="icon of tomato" class="tomato" />
+        <h1>Tastefferent</h1>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        <hr />
+        <hr />
+        <hr />
+      </div>
+
+      <nav class="toggle-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="photos.html">Photos</a>
+        <a class="a_delivery" href="delivery.html">Delivery</a>
+        <a href="location.html">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="delivery_main">
+      <div class="delivery">
+        <h2>Get Started</h2>
+      </div>
+      <div>
+        <h3>Click Shopping Cart for to Add</h3>
+        <img class="shopping_cart" src="images/cart.png" alt="shopping cart" />
+      </div>
+
+      <h3>Or</h3>
+
+      <h3>Sign up as a Driver</h3>
+      <div class="contact_info">
+        <div class="labels">
+          <label for="fname">First Name:</label>
+          <label for="fname">Last Name:</label><label for="email">Email:</label>
+          <label for="phone">Phone Number:</label>
+        </div>
+
+        <div class="inputs">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="First name"
+          />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Last name"
+          />
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <input
+            type="number"
+            id="phonenumber"
+            name="phonenumber"
+            placeholder="7158282627"
+          />
+        </div>
+      </div>
+      <div class="delivery_submit">
+        <input class="contact-submit" type="submit" value="Submit" />
+      </div>
+
+      <p>
+        *NOTE: Functionality not complete and will be done using React with SQL
+        or firebase as the database to store information and data of users.
+        Thanks!
+      </p>
+
+      <div class="dont">
+        <p>Sign up to get new updates!</p>
+
+        <div>
+          <input class="input_sign_up" type="text" />
+          <input class="sign_up" type="submit" value="Sign Up" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy;Copyright 2022 Tastefferent. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
