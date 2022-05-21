@@ -503,3 +503,11 @@ body {
     box-shadow: 3px 3px gray;
   }
 }
+
+/*My Screen is super big and this is throwing me off*/
+@media (min-width: 1900px) {
+  .get_started {
+    top: 20%;
+    left: 42%;
+  }
+}
